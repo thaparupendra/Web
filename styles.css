@@ -91,3 +91,100 @@ nav ul li a:hover{
     color: #FFFFFF;
     border: none;
 }
+/*cv.html css part*/
+
+.resume_box{
+    width: 810px;
+    height: 1000px;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+}
+.box_outer{
+    padding: 35px;
+}
+.box-1{
+    background-color: #26252d;
+    width: 34%;
+    float: left;
+    height: 1000px;
+}
+.content{
+    padding: 20px;
+}
+.box-2{
+    width: 57%;
+    float: left;
+    padding: 25px;
+    height: 1000px;
+    background-color: #ffff00;
+}
+.profile{
+    width: 100%;
+}
+h1{
+    color: #ceced1;
+    font-family: system-ui;
+    font-weight: 300;    
+}
+p{
+    color: #ceced1;
+    font-family: system-ui;
+    font-weight: 300;
+    font-size: 13px;
+}
+.skills{
+    color: #FFFFFF;
+}
+.intro{
+    text-align: center;
+}
+.intro h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #26252d;
+}
+.hr{
+    height: 15px;
+    border: none;
+    background-color: #ceced1;
+    margin: -40px 20px;
+}
+
+.intro-p{
+    color: #0f0808;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 13%!important;
+}
+.intro p{
+    color: #0f0808;
+    font-family: system-ui;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: -5px;
+}
+.content-1{
+    padding-top: 35px;
+}
+.head{
+    color: #26252d;
+    font-family: system-ui;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.para-1{
+    font-size: 15px;
+    color: #262626;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.para-2{
+    font-size: 15px;
+    color: #262626;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-transform: capitalize;
+}
