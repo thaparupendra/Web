@@ -1,7 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 body{
     margin: 0px;
     padding: 0px;
-
+	min-height: 100vh;
 }
 ul{
     list-style: none;
@@ -25,8 +31,16 @@ nav{
     z-index: 1;
     background-color: #FFFFFF;
 }
-.logo img{
-    height: 45px;
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 27px;
+    float: right;
+}
+#toggle{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -39,7 +53,7 @@ nav ul li a{
     display: flex;
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: #585b5b;
+    color: #250ea7;
     letter-spacing: 1px;
 }
 nav ul li a:hover{
@@ -156,7 +170,7 @@ p{
     font-weight: 400;
     font-size: 17px;
     margin-top: 13%!important;
-}
+} 
 .intro p{
     color: #0f0808;
     font-family: system-ui;
@@ -187,4 +201,117 @@ p{
     margin-bottom: 20px;
     margin-top: 0px;
     text-transform: capitalize;
+}
+
+
+/*contact.html*/
+.contact_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+.contact_info{
+    columns: rgb(117, 16, 16);
+    max-width: 550px;
+    padding-left: 55px;
+    line-height: 70px;
+    font-size: 18px;
+}
+.contact_info i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.contact_form{
+    max-width: 800px;
+    margin-right: 60px;
+}
+.contact_info .contact_form{
+    flex: 1;    
+}
+.contact_form h2{
+    color: red;
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.contact_form .text-box{
+    width: 45%;
+    padding: 14px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+.contact_form .text-box:first-child{
+    margin-right: 17px;
+}
+.contact_form textarea{
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    min-height: 300px;
+    resize: vertical;
+    margin-bottom: 30px;
+    opacity: 1;
+}
+.contact_form .send_btn{
+    background: royalblue;
+    color: snow;
+    border: none;
+    width: 120px;
+    font-size: 16px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    label{
+        display: block;
+        cursor: pointer;        
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid black;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+.contact_section{
+    flex-direction: column;
+}
+.contact_info .contact_form{
+    margin: 35px 52px;
+}
+.contact_form h2{
+    font-size: 33px;
+}
+.contact_form .text-box{
+    width: 100%;
+}
 }
