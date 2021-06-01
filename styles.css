@@ -7,7 +7,7 @@
 body{
     margin: 0px;
     padding: 0px;
-	min-height: 100vh;
+    min-height: 100vh;
 }
 ul{
     list-style: none;
@@ -29,7 +29,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #FFFFFF;
+    background-color: #21943e;
 }
 label{
     margin: 0 40px 0 0;
@@ -42,6 +42,7 @@ label{
 #toggle{
     display: none;
 }
+
 nav ul{
     display: flex;
 }
@@ -57,9 +58,12 @@ nav ul li a{
     letter-spacing: 1px;
 }
 nav ul li a:hover{
-    background-color: #2adabc;
+    background-color: #000807;
     color: #FFFFFF;
 }
+
+
+
 .text-container p:nth-child(1){
     font-family: calibri;
     color: #6d6d6d;
@@ -105,6 +109,7 @@ nav ul li a:hover{
     color: #FFFFFF;
     border: none;
 }
+
 /*cv.html css part*/
 
 .resume_box{
@@ -170,7 +175,7 @@ p{
     font-weight: 400;
     font-size: 17px;
     margin-top: 13%!important;
-} 
+}
 .intro p{
     color: #0f0808;
     font-family: system-ui;
@@ -202,6 +207,7 @@ p{
     margin-top: 0px;
     text-transform: capitalize;
 }
+
 
 
 /*contact.html*/
@@ -270,7 +276,25 @@ p{
     cursor: pointer;
 }
 
+/*portfolio*/
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    
 
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 20px;
+    padding: 20px;
+}
 
 
 
