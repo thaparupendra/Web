@@ -1,41 +1,61 @@
+<!--this page includes placeholder images-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"><!--Link between HTMl and external CSS-->
 </head>
 <body>
-    <!--main---->
-    <section id="main">
-        <!--navigation---->
+    <!--main-->
+    <div id="main">
+        <!--navigation-->
         <nav>
-            <label for="toggle">&#9776;</label>
+            <label for="toggle">&#9776;</label><!--Used for hamberger Menu-->
             <input type="checkbox" id="toggle">
             
-            <!--Menu---->
-            <ul class="menu">
+            <!--Menu-->
+            <ul class="menu"><!--Link between all five html pages-->
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cv.html">Cv</a></li>
-                <li><a href="#">Site_report</a></li>
+                <li><a href="site_report.html">Site_report</a></li>
             </ul>
-            <!--Menu Ends---->
+            <!--Menu Ends-->
             
         </nav>
-        <!--navigation Ends---->
-        <div id="portfolio">
-            <h1 class="headings">PORTFOLIO</h1>
-			<div class="gallery">
-				<img src="image1.jpg" alt="">
-				<img src="image2.jpg" alt="">
-				<img src="image3.jpg" alt="">
-				<img src="image4.jpg" alt="">
-				<img src="image5.jpg" alt="">
-			</div>
-        
+        <!--navigation Ends-->
+        <div class="Portfolio_content">
+            <a target="_blank" href="image1.jpg">
+            <img src="image1.jpg" alt="placeholder image">
+            </a>
+            <div class="desc">Placeholder image for image1</div>
         </div>
-</section>
+        <div class="Portfolio_content">
+            <a target="_blank" href="image2.jpg">
+            <img src="image2.jpg" alt="placeholder image">
+            </a>
+            <div class="desc">Placeholder image for image2</div>
+        </div>
+        <div class="Portfolio_content">
+            <a target="_blank" href="image3.jpg">
+            <img src="image3.jpg" alt="placeholder image">
+            </a>
+            <div class="desc">Placeholder image for image3</div>
+        </div>
+        <div class="Portfolio_content">
+            <a target="_blank" href="image4.jpg">
+            <img src="image4.jpg" alt="placeholder image">
+            </a>
+            <div class="desc">Placeholder image for image4</div>
+        </div>
+        <div class="Portfolio_content">
+            <a target="_blank" href="image5.jpg">
+            <img src="image5.jpg" alt="placeholder image">
+            </a>
+            <div class="desc">Placeholder image for image5</div>
+        </div>
+    </div>
 
 </body>
 </html>
