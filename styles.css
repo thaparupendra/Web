@@ -2,13 +2,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: arial;
 }
 body{
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
-	background-color: green;
+    background-color: green;
 }
 ul{
     list-style: none;
@@ -43,7 +43,6 @@ label{
 #toggle{
     display: none;
 }
-
 nav ul{
     display: flex;
 }
@@ -62,17 +61,14 @@ nav ul li a:hover{
     background-color: #000807;
     color: #FFFFFF;
 }
-
-
-
 .text-container p:nth-child(1){
-    font-family: calibri;
+    
     color: #6d6d6d;
     font-size: 22px;
     font-weight: bold;
 }
 .text-container p:nth-child(2){
-    font-family: Calibri;
+    
     font-weight: bold;
     letter-spacing: 1px;
     color: #1a1a1a;
@@ -80,7 +76,6 @@ nav ul li a:hover{
 
 }
 .text-container p:nth-child(3){
-    font-family: myrid pro regular;
     color: #403e3e;
     font-size: 30px;
     line-height: 30px;
@@ -111,7 +106,9 @@ nav ul li a:hover{
     border: none;
 }
 .image{
-	float: right;
+    float: right;
+    width: 40%;
+    padding-top: 18%;
 }
 
 /*cv.html css part*/
@@ -223,7 +220,6 @@ p{
     padding: 15%;
 }
 .contact_info{
-    columns: rgb(117, 16, 16);
     max-width: 550px;
     padding-left: 55px;
     line-height: 70px;
@@ -281,38 +277,26 @@ p{
 }
 
 /*portfolio*/
-.portfolio{
-    display: flex;
-    flex-direction: column;
-    
 
+
+
+.Portfolio_content a img{
+    width: 200px;/*width for images*/
+    height: 200px;/*height for images*/
 }
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
-}
-.gallery img{
-    width: 360px;
-    height: 250px;
-    margin: 20px;
-    padding: 20px;
+
+.Portfolio_content{
+    padding: 70px 20px 20px 20px;
+    float: left;
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/*media Queries
+responsive web design to makes web page look good on all devices.
+(desktops, tablets, and phones)*/
 
 @media screen and (max-width:500px) {
+    /*define completely different styles for different browser sizes*/
     label{
         display: block;
         cursor: pointer;        
