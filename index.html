@@ -1,37 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--This is home page which includes brief bio taglines (Hello, I am Rupendra)-->
+<!DOCTYPE html><!--Document type-->
+<html><!--root element-->
 <head>
-  
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"><!--Link between HTMl and external CSS-->
 </head>
 <body>
-    <!--main---->
-    <section id="main">
-        <!--navigation---->
+    <!--main-->
+    
+    <div id="main">
+    
+        <!--navigation-->
         <nav>
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle">
-            <!--Menu---->
+            
+            <!--Menu-->
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cv.html">Cv</a></li>
                 <li><a href="site_report.html">Site_report</a></li>
             </ul>
+            <!--Menu Ends-->
+            
         </nav>
-      <div class="text-container">
+        <!--navigation Ends-->
+
+        <div class="text-container">
             <p>Hello,</p>
             <p>I'M Rupendra Thapa</p>
             <p>I am Web designer</p>
             <button class="down-cv">Download Cv</button>
-
         </div>
-		
-		<div class="image">
-		<img src="img1.jpg" alt="Picture">
-		</div> 
-</section>
+        
+        <div class="image">
+        <img src="profile.png" alt="Picture">
+        </div> 
+</div>
+<!--main End-->
 </body>
 </html>
