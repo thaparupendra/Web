@@ -1,47 +1,42 @@
+/*Styling all html page through style.css file*/
+/*descries all five HTML elements how to display */
 *{
     padding: 0px;
-    margin: 0px;
+    margin: 0px;/*all four margins are 0px*/
     box-sizing: border-box;
     font-family: arial;
 }
 body{
-    margin: 0px;
+    margin: 0px;/*all four margins are 0px*/
     padding: 0px;
-    min-height: 100vh;
-    background-color: green;
+	background-color: green;/*backgroud color into green*/
 }
+
 ul{
-    list-style: none;
+    list-style: none;/*clears boolean mark*/
 }
 a{
-    text-decoration: none;
+    text-decoration: none;/*clears underline*/
 }
-#main{
-    width: 100%;
+#main{/*# is used for id.*/
+    width: 100%;/*width set to 100%*/
     height: 100vh;
-    position: relative;
+    position: relative;/*positioned relative to normal position*/
 }
 nav{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around;/*giving space before after and between items*/
+    align-items: center;/*Content positioned at center of the container*/
     position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
-    z-index: 1;
-    background-color: #21943e;
+    background-color:  black;/*nav bar color change into black*/
 }
-label{
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 27px;
-    float: right;
-}
+
 #toggle{
     display: none;
+}
+.active{
+    background-color: yellow;/*active menu bar*/
 }
 nav ul{
     display: flex;
@@ -49,80 +44,73 @@ nav ul{
 nav ul li a{
     height: 40px;
     line-height: 43px;
-    margin: 3px;
-    padding: 0px 22px;
-    display: flex;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: #250ea7;
-    letter-spacing: 1px;
+    margin: 3px;/*all four margins are 3px*/
+    padding: 0px 22px;/*padding top& bottom 0px and left & lrft 22px*/
+    display: flex;/*displayed blocked-lavel flex*/
+    font-size: 0.8rem;/*size of font into 8rem*/
+    text-transform: uppercase;/*changing all letter into uppercase*/
+    color: red;
+    letter-spacing: 1px;/*increase 1px space between text*/
 }
 nav ul li a:hover{
-    background-color: #000807;
-    color: #FFFFFF;
+    background-color: green;/*mouse crouser into nav-bar element element background change into green*/
+    color: white;
 }
-.text-container p:nth-child(1){
+.home_content p:nth-child(1){/*describes 1st <p> tag*/
     
-    color: #6d6d6d;
+    color: red;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: bold;/*thick font*/
 }
-.text-container p:nth-child(2){
+.home_content p:nth-child(2){/*describes 2nd <p> tag*/
     
     font-weight: bold;
-    letter-spacing: 1px;
-    color: #1a1a1a;
+    color: red;
     font-size: 60px;
 
 }
-.text-container p:nth-child(3){
-    color: #403e3e;
-    font-size: 30px;
-    line-height: 30px;
-}
-.text-container p{
+
+.home_content p{
     line-height: 60px;
     margin: 30px;
 }
-.text-container{
-    position: absolute;
-    left: 13%;
+.home_content{
+    position: absolute;/*ancestor element*/
+    left: 13%;/*sets left edge position into 13%*/
     top: 42%;
 
 }
-.text-container button{
+.home_content button{
     width: 130px;
     height: 42px;
-    border-radius: 10px;
+    border-radius: 10px;/*box corner*/
     font-family: calibri;
     font-weight: bold;
     font-size: 14px;
-    outline: none;
-    margin: 0px 10px;
+    margin: 0px 10px;/*left and right margin sets 10px*/
 }
-.down-cv{
-    background-color: #0b0b0b;
-    color: #FFFFFF;
-    border: none;
+.Download{
+    background-color: black;
+    color: red;
+    border: none;/*removed border*/
 }
 .image{
-    float: right;
+	float: right;
     width: 40%;
-    padding-top: 18%;
+    padding-top: 18%;/*only padding set for top*/
 }
 
 /*cv.html css part*/
 
-.resume_box{
+.box_resume{
+    padding: 35px;
+}
+.resume_outer{
     width: 810px;
     height: 1000px;
     margin: 30px auto;
-    background-color: #FFFFFF;
-}
-.box_outer{
-    padding: 35px;
-}
-.box-1{
+}    
+.resume_box1{
     background-color: #26252d;
     width: 34%;
     float: left;
@@ -131,23 +119,23 @@ nav ul li a:hover{
 .content{
     padding: 20px;
 }
-.box-2{
+.resume_box2{
     width: 57%;
     float: left;
     padding: 25px;
     height: 1000px;
-    background-color: #ffff00;
+    background-color: yellow;
 }
 .profile{
     width: 100%;
 }
 h1{
-    color: #ceced1;
+    color: black;
     font-family: system-ui;
     font-weight: 300;    
 }
 p{
-    color: #ceced1;
+    color: black;
     font-family: system-ui;
     font-weight: 300;
     font-size: 13px;
@@ -215,7 +203,7 @@ p{
 .contact_section{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;/*items positioned center of container*/
     align-items: center;
     padding: 15%;
 }
@@ -290,6 +278,38 @@ p{
     float: left;
 }
 
+/*Siterepert css*/
+
+.report_outer{
+    width: 810px;
+    height: 10000000px;
+    margin: 30px auto;
+    background-color: white;
+} 
+.module_exp{
+    padding: 50px;
+    background-color: white;
+    flex: inherit;
+}
+.type1{
+    padding-left: 50px;
+}
+.type2{
+    padding: 50px;
+}
+.type2 a img{
+    width: 200px;
+    height: 200px;
+}
+type3{
+    padding-left: 10px;
+}
+
+
+
+
+
+
 
 /*media Queries
 responsive web design to makes web page look good on all devices.
@@ -327,3 +347,4 @@ responsive web design to makes web page look good on all devices.
     width: 100%;
 }
 }
+
